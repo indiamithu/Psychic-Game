@@ -1,9 +1,480 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>The Psychic Game</title>
 </head>
 <body>
+<div id="game">
+<p>Guess what letter I'm thinking of</p>
+</div>
+<!--I need the user to make a choice
+Computer to make a choice
+Capture these choicess
+Compare these choices and determine a win, loss or tie
+Display the result to the user -->
+<script type="text/javascript">
+
+     var computerchoices=["a","b","c","d","e","f","g","h","i"];
+     var wins=0;
+     var losses=0;
+     var guesses=0;
+	
+
+    document.onkeyup=function(){
+    	var userguess = String.fromCharCode(event.keyCode).toLowerCase();
+	    console.log("userguess "+userguess)
+	    
+
+	    var computerguess = computerchoices[Math.floor(Math.random()*computerchoices.length)];
+	    console.log("computerguess "+computerguess)
+
+	    if(userguess=="a" || userguess=="b" ||userguess=="c" ||userguess=="d" ||userguess=="e" || userguess=="f" ||userguess=="g" || userguess =="h" || userguess=="i")
+
+	    {
+
+	    	if((userguess=="a")&&(computerguess=="a")){
+	    		wins++;
+	    		guesses++;
+
+	    		alert("You win! "+wins);
+	    	}
+	    	if((userguess=="b")&&(computerguess=="b")){
+	    		wins++;
+	    		guesses++;
+	    		alert("You win! "+wins);
+
+	    	}
+	    	if((userguess=="c")&&(computerguess=="c")){
+	    		wins++;
+	    		guesses++;
+	    		alert("You win! "+wins);
+	    	}
+	    	if((userguess=="d")&&(computerguess=="d")){
+	    		wins++;
+	    		guesses++;
+	    		alert("You win! "+wins);
+	    	}
+	    	if((userguess=="e")&&(computerguess=="e")){
+	    		wins++;
+	    		guesses++;
+	    		alert("You win! "+wins);
+	    	}
+	    	if((userguess=="f")&&(computerguess=="f")){
+	    		wins++;
+	    		guesses++;
+	    		alert("You win! "+wins);
+	    	}
+	    	if((userguess=="g")&&(computerguess=="g")){
+	    		wins++;
+	    		guesses++;
+	    		alert("You win! "+wins);
+	    	}
+	    	if((userguess=="h")&&(computerguess=="h")){
+	    		wins++;
+	    		guesses++;
+	    		alert("You win! "+wins);
+	    	}
+	    	if((userguess=="i")&&(computerguess=="i")){
+	    		wins++;
+	    		guesses++;
+	    		alert("You win! "+wins);
+	    	}
+	    	if((userguess=="a")&&(computerguess=="b")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+           if((userguess=="a")&&(computerguess=="c")){
+           	    losses++;
+           	    guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="a")&&(computerguess=="d")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="a")&&(computerguess=="e")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="a")&&(computerguess=="f")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="a")&&(computerguess=="g")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="a")&&(computerguess=="h")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="a")&&(computerguess=="i")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="b")&&(computerguess=="a")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="b")&&(computerguess=="c")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="b")&&(computerguess=="d")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="b")&&(computerguess=="e")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="b")&&(computerguess=="f")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="b")&&(computerguess=="g")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="b")&&(computerguess=="h")){
+
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="b")&&(computerguess=="i")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="c")&&(computerguess=="a")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="c")&&(computerguess=="b")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="c")&&(computerguess=="d")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="c")&&(computerguess=="e")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="c")&&(computerguess=="f")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="c")&&(computerguess=="g")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="c")&&(computerguess=="i")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="d")&&(computerguess=="a")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="d")&&(computerguess=="b")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="d")&&(computerguess=="c")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="d")&&(computerguess=="e")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="d")&&(computerguess=="f")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="d")&&(computerguess=="g")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="d")&&(computerguess=="h")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="d")&&(computerguess=="i")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose! "+losses);
+	    	}
+	    	if((userguess=="e")&&(computerguess=="a")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose ! "+losses);
+	    	}
+	    	if((userguess=="e")&&(computerguess=="b")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="e")&&(computerguess=="c")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="e")&&(computerguess=="d")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="e")&&(computerguess=="f")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="e")&&(computerguess=="g")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="e")&&(computerguess=="h")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="e")&&(computerguess=="i")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="f")&&(computerguess=="a")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="f")&&(computerguess=="b")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="f")&&(computerguess=="c")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="f")&&(computerguess=="d")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="f")&&(computerguess=="e")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="f")&&(computerguess=="g")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="f")&&(computerguess=="h")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="f")&&(computerguess=="i")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="g")&&(computerguess=="a")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="g")&&(computerguess=="b")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="g")&&(computerguess=="c")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="g")&&(computerguess=="d")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="g")&&(computerguess=="e")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="g")&&(computerguess=="f")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="g")&&(computerguess=="h")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="g")&&(computerguess=="i")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="h")&&(computerguess=="a")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="h")&&(computerguess=="b")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="h")&&(computerguess=="c")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="h")&&(computerguess=="d")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="h")&&(computerguess=="e")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="h")&&(computerguess=="f")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="h")&&(computerguess=="g")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="h")&&(computerguess=="i")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="i")&&(computerguess=="a")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="i")&&(computerguess=="b")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="i")&&(computerguess=="c")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="i")&&(computerguess=="d")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="i")&&(computerguess=="e")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="i")&&(computerguess=="f")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="i")&&(computerguess=="g")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+	    	if((userguess=="i")&&(computerguess=="h")){
+	    		losses++;
+	    		guesses++;
+	    		alert("You lose!");
+	    	}
+
+	    }
+	      else 
+
+	    {
+
+	      	alert("Please choose a, b, c, d, e, f, g, h or i ");
+	      	guesses++;
+
+	    }
+
+	        var guesses_left=9-guesses;
+	        while(guesses ==10){ 
+	        guesses=0;
+	        wins=0;
+	        losses=0;
+	        guesses_left=0
+	    }              
+           
+
+
+            
+	       var html="<p>Guess what letter I'm thinking of</p>" +
+	       "<p> wins:   " +wins+ "</p>"  +
+	       "<p> losses: " +losses+ "</p>" +
+	       "<p> Guesses left:   " +guesses_left+ "</p>" +
+	       "<p> Your guesses so far: " +userguess+ "</p>";
+	       document.querySelector('#game').innerHTML = html
+
+	   }
+	       
+
+	   
+     
+
+
+   
+
+
+</script>
 
 </body>
 </html>

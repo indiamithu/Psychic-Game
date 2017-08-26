@@ -2,10 +2,11 @@
 <html>
 <head>
 	<title>The Psychic Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 <div id="game">
-<p>Guess what letter I'm thinking of</p>
+<p>The Psychic Game</p>
 </div>
 <!--I need the user to make a choice
 Computer to make a choice
@@ -23,7 +24,8 @@ Display the result to the user -->
     document.onkeyup=function(){
     	var userguess = String.fromCharCode(event.keyCode).toLowerCase();
 	    console.log("userguess "+userguess)
-	    
+
+
 
 	    var computerguess = computerchoices[Math.floor(Math.random()*computerchoices.length)];
 	    console.log("computerguess "+computerguess)
